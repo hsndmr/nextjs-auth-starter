@@ -1,0 +1,11 @@
+{
+  "user": {
+    "_id": "6407d655dd03782647becaa1",
+    "name": "name",
+    "lastName": "last name",
+    "email": "user@test.com",
+    "createdAt": "2023-03-08T00:27:01.762Z",
+    "updatedAt": "2023-03-17T21:24:44.417Z"
+  },
+  "token": "token"
+}
