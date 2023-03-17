@@ -38,6 +38,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-/src/*.typegen.ts
+src/**/*.typegen.ts
 
 .env
