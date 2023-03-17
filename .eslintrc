@@ -44,12 +44,16 @@
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/quotes": [
           2,
-          "backtick",
+          "single",
           {
-            "avoidEscape": true
+            "avoidEscape": true,
+            "allowTemplateLiterals": true
           }
         ]
       }
     }
+  ],
+  "ignorePatterns": [
+    "*.typegen.ts"
   ]
 }
