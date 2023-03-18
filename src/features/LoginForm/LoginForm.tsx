@@ -13,6 +13,8 @@ import { LoginProps } from '@/api/interfaces/userServiceTypes';
 import { useContext } from 'react';
 import { GlobalStateContext } from '@/providers/GlobalStateProvider';
 import { useActor } from '@xstate/react';
+import Link from 'next/link';
+import { Route } from '@/constants/route';
 
 export default function LoginForm() {
   const { authMachineService } = useContext(GlobalStateContext);
@@ -75,9 +77,12 @@ export default function LoginForm() {
         </CardContent>
         <CardActions
           sx={{
-            justifyContent: 'flex-end',
+            justifyContent: 'space-between',
           }}
         >
+          <Button href={Route.REGISTER} component="a" LinkComponent={Link}>
+            Create account
+          </Button>
           <Button
             disabled={state.matches('loggingIn')}
             type="submit"
